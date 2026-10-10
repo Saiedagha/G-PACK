@@ -37,11 +37,11 @@
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); overflow-x: clip; }
 body {
   font-family: var(--font-body); font-size: var(--fs-base); line-height: 1.75;
   color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 html[lang="en"] body { line-height: 1.6; }
 h1, h2, h3 { font-family: var(--font-display); line-height: 1.25; color: var(--ink); }
@@ -424,3 +424,24 @@ html[lang="en"] .hero-title { letter-spacing: -.025em; max-width: 13ch; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 main { overflow-x: clip; }
+
+/* ---------- "why" carousel on mobile ---------- */
+.carousel-dots { display: none; }
+@media (max-width: 560px) {
+  .why-grid {
+    display: flex; gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    margin-inline: -1.25rem; padding: .5rem 1.25rem 1.25rem; scroll-padding-inline: 1.25rem;
+    scrollbar-width: none;
+  }
+  .why-grid::-webkit-scrollbar { display: none; }
+  .why-item { flex: 0 0 82%; scroll-snap-align: center; }
+  .why-item:hover { transform: none; }
+  .js .why-grid .reveal { opacity: 1; transform: none; }
+  .carousel-dots { display: flex; justify-content: center; gap: .5rem; margin-top: .5rem; }
+  .carousel-dots button {
+    width: .6rem; height: .6rem; border-radius: 999px; background: var(--kraft);
+    transition: width .3s var(--ease), background-color .3s;
+  }
+  .carousel-dots button.active { width: 1.8rem; background: var(--indigo); }
+}

@@ -217,3 +217,35 @@ form.addEventListener('submit', e => {
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
 });
 nameInput.addEventListener('input', () => { if (nameInput.value.trim()) { err.hidden = true; nameInput.classList.remove('invalid'); } });
+
+/* ---- "why" carousel dots (mobile) ---- */
+(() => {
+  const track = $('.why-grid');
+  const dotsWrap = $('#why-dots');
+  if (!track || !dotsWrap) return;
+  const items = $$('.why-item', track);
+  const dots = items.map((item, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.tabIndex = -1;
+    b.addEventListener('click', () => {
+      const tr = track.getBoundingClientRect(), ir = item.getBoundingClientRect();
+      track.scrollBy({ left: (ir.left + ir.width / 2) - (tr.left + tr.width / 2), behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+  const update = () => {
+    const mid = track.getBoundingClientRect().left + track.clientWidth / 2;
+    let best = 0, bestDist = Infinity;
+    items.forEach((it, i) => {
+      const r = it.getBoundingClientRect();
+      const d = Math.abs(r.left + r.width / 2 - mid);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === best));
+  };
+  track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
