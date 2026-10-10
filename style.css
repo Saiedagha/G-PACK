@@ -317,3 +317,9 @@ html[lang="en"] .hero-title { letter-spacing: -.025em; max-width: 14ch; }
   .hero-actions .btn { flex: 1 1 100%; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+/* ---------- WhatsApp green ---------- */
+:root { --whatsapp: #25D366; --whatsapp-deep: #1DA851; }
+.contact-list .ri-whatsapp-line { background: var(--whatsapp); color: #fff; }
+.footer-social a[aria-label="WhatsApp"] { background: var(--whatsapp); }
+.footer-social a[aria-label="WhatsApp"]:hover { background: var(--whatsapp-deep); }
