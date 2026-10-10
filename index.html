@@ -1,259 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!------- FAVICON----- --->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جي باك للكرتون | G-PACK Carton</title>
+  <meta name="description" content="جي باك للكرتون – مصنع كرتون مضلع في جمصة، مصر. صناديق وألواح كرتون مطبوعة وغير مطبوعة بأي مقاس ولون.">
+  <meta name="theme-color" content="#2B2785">
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg">
 
-
-    <!------- REMIXICONS ------>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <!---------- CSS ---------->
-     <link rel="stylesheet" href="style.css">
-    <title>G PACK</title>
-          <link rel="icon" type="image/png" href="img/logo.jpg">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--------- HEADER --------->
-     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav-logo">
-            <img src="img/nav.jpg "  alt="">
-                              
-          </a>
+  <a class="skip-link" href="#main" data-i18n="skip">تخطي إلى المحتوى</a>
 
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list">
-            <li>
-                <a href="#home" class="nav-link active-link" data-lang="home">الصفحة الرئيسية</a>
-            </li>
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="nav-logo" aria-label="G-PACK">
+        <img src="img/nav.jpg" alt="G PACK" width="140" height="50">
+      </a>
 
-            
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active-link" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#products" class="nav-link" data-i18n="nav_products">منتجاتنا</a></li>
+          <li><a href="#factory" class="nav-link" data-i18n="nav_factory">المصنع</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Close menu"><i class="ri-close-line"></i></button>
+      </div>
 
-            <li>
-                <a href="#about" class="nav-link" data-lang="about">من نحن</a>
-            </li>
+      <div class="nav-actions">
+        <button id="lang-btn" class="lang-btn" type="button">
+          <i class="ri-global-line" aria-hidden="true"></i><span id="lang-label">English</span>
+        </button>
+        <a href="https://wa.me/201065767929" target="_blank" rel="noopener" class="btn btn-red btn-sm nav-cta">
+          <i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="nav_quote">اطلب عرض سعر</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-menu"><i class="ri-menu-3-line"></i></button>
+      </div>
+    </nav>
+  </header>
 
-            <li>
-                <a href="#order" class="nav-link" data-lang="services">الخدمات</a>
-            </li>
-
-           
-
-            <li>
-                <a href="#contact" class="nav-link" data-lang="contact">التواصل</a>
-            </li>            
-
-            <li>
-              <button id="lang-btn" class="lang"> 
-                 <i class="fa-solid fa-globe"></i> English
-                    </button>
-               </li>
-          </ul>
-
-          <!-- close button -->
-           <div class="nav-close" id="nav-close">
-             <i class="ri-close-circle-fill"></i> 
-           </div>
-
-           
+  <main class="main" id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-text">
+          <p class="hero-place"><i class="ri-map-pin-2-fill" aria-hidden="true"></i><span data-i18n="hero_place">مصنع كرتون مضلع — جمصة، مصر</span></p>
+          <h1 class="hero-title" data-i18n="hero_title">كرتون يتحمّل الحِمل والرطوبة</h1>
+          <p class="hero-lead" data-i18n="hero_lead">تحرص جي باك على تزويد العملاء بأفضل المنتجات بأعلى جودة، من خلال شراء أفضل المواد الخام لإنتاج كراتين مقاومة لضغط الأحمال والرطوبة.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/201065767929" target="_blank" rel="noopener" class="btn btn-red">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="hero_cta1">اطلب عرض سعر</span>
+            </a>
+            <a href="#products" class="btn btn-ghost" data-i18n="hero_cta2">تصفّح المنتجات</a>
+          </div>
         </div>
 
-        <!-- toggle button -->
-         <div class="nav-toggle" id="nav-toggle">
-          <i class="ri-apps-2-fill"></i>
-         </div>
-      </nav>
-     </header>
+        <div class="hero-media">
+          <img src="img/2.png" alt="" class="hero-img" width="500" height="500">
+        </div>
+      </div>
 
-    <!----------=============== MAIN --------------------------->
-     <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home" id="home">
-            <div class="home-container container grid">
-                <div class="home-data">
-                 <img src="img/head.jpg" alt="">
-                  
-               <H3 class="hed" data-lang="heds">
-                تحرص جي باك على تزويد العملاء بأفضل المنتجات بأعلى جودة و ذلك من خلال شراء أفضل المواد الخام لإنتاج كراتين مقاومه لضغط الاحمال و الرطوبة
+      <dl class="facts container">
+        <div class="fact"><dt data-i18n="fact1_k">تأسس</dt><dd>2017</dd></div>
+        <div class="fact"><dt data-i18n="fact2_k">سنوات خبرة</dt><dd data-i18n="fact2_v">قرابة 20</dd></div>
+        <div class="fact"><dt data-i18n="fact3_k">المقاسات والألوان</dt><dd data-i18n="fact3_v">حسب الطلب</dd></div>
+      </dl>
+    </section>
 
-               </H3>
+    <div class="flute" aria-hidden="true"></div>
 
-                  <a href="#about" class="button"data-lang="btn1" >
-                   من نحن
-                  </a>
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="about-grid container">
+        <div class="about-media">
+          <img src="img/9.jpg" alt="" class="about-img" loading="lazy" width="800" height="565">
+        </div>
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about_title">مصنع كرتون منذ 2017</h2>
+          <p data-i18n="about_p1">جي باك للكرتون مصنع تأسس عام 2017 بخبرة تقارب العشرين عاماً. ننتج كافة أنواع الكرتون المضلع المستخدم في تعبئة الإنتاج الزراعي والغذائي والملابس.</p>
+          <p data-i18n="about_p2">مصنعنا في المنطقة الصناعية الثالثة بجمصة، ومجهّز بأحدث الآلات لإنتاج صناديق وألواح الكرتون المطبوعة وغير المطبوعة.</p>
+          <ul class="sectors" aria-label="Sectors">
+            <li><i class="ri-plant-line" aria-hidden="true"></i><span data-i18n="sector1">الإنتاج الزراعي</span></li>
+            <li><i class="ri-restaurant-line" aria-hidden="true"></i><span data-i18n="sector2">المواد الغذائية</span></li>
+            <li><i class="ri-shirt-line" aria-hidden="true"></i><span data-i18n="sector3">الملابس</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                  <img src="im" alt="" class="home-dam-1">
-                  <img src="img/.png" alt="" class="home-dam-2">
-                </div>
+    <!-- ============ PRODUCTS ============ -->
+    <section class="products section" id="products">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-i18n="prod_title">ما ننتجه</h2>
+          <p class="section-lead" data-i18n="prod_lead">نصنع الصناديق الكرتونية والألواح المموجة بأي حجم ومواصفات وبجميع الألوان.</p>
+        </header>
 
-                <div class="home-images">
-                     <img src="img/2.png" alt="" class="home-img">
-
-                </div>
+        <div class="product-grid">
+          <article class="product product-wide">
+            <img src="img/4.png" alt="" loading="lazy" width="204" height="206">
+            <div>
+              <h3 data-i18n="p1_t">كراتين مطبوعة</h3>
+              <p data-i18n="p1_d">طباعة بألوان متعددة بتصميمك وشعارك — مثالية لتعبئة الفاكهة والخضروات والتصدير.</p>
             </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about" id="about">
-            <div class="about-container container grid">
-              <div class="about-data">
-                <span class="section-subtitle"></span>
-                <h5 class="a" data-lang="tnt">
-                جي باك للكرتون مصنع كرتون تأسس عام 2017.بخبرة كبيرة تقارب العشرين عاما
-                 ..ننتج كافة أنواع الكرتون المضلع المستخدم في تعبئة الإنتاج الزراعي والغذائي والملابس.
-                </h5>
-
-                <p class="about-description">
-               
-                </p>
-
-               
-              </div>
-
-              <div class="about-images">
-                 <img src="img/home.png" alt="image" class="about-img-1">
-                 <img src="img/3.png" alt="image" class="about-img-2">
-
-               <a href="#order" class="button" data-lang="btn2">خدماتنا</a></div>
+          </article>
+          <article class="product">
+            <img src="img/home.png" alt="" loading="lazy" width="206" height="206">
+            <div>
+              <h3 data-i18n="p2_t">صناديق سادة</h3>
+              <p data-i18n="p2_d">صناديق كرتون مضلع بدون طباعة للشحن والتخزين.</p>
             </div>
-         </section>
-
-         <!--==================== servse ====================-->
-         <section class="order" id="order">
-            <h2 class="section-title" data-lang="ord">
-                جي باك شركة لتصنيع الكرتون  في مدينة جمصة في مصر ومجهزة بأحدث الآلات لإنتاج الكرتون المضلع جي باك شركه متخصصة في إنتاج صناديق و الواح الكرتون المطبوعة وغير المطبوعة يعتبر مصنع جي باك لصناعة الكرتون وجهتك الاولى لجميع احتياجات التعبئة والتغليف الخاصة بك حيث يمكن تصميم الطباعة و انتاج العينات و توفير الخدمات اللوجستية نحن نهدف إلى توفير كرتون عالي الجودة 
-            </h2>
-         
-
-            <div class="">
-          <div class="box-video">
-                            
-                <div class="video-container">
-                       <video width="600" controls>
-                         <source src="img/v.mp4" type="video/mp4">
-                       </video>
-                     </div>
-                </div>
-
+          </article>
+          <article class="product">
+            <img src="img/3.png" alt="" loading="lazy" width="310" height="310">
+            <div>
+              <h3 data-i18n="p3_t">علب بغطاء</h3>
+              <p data-i18n="p3_d">علب بيضاء أو كرافت بغطاء منفصل للملابس والهدايا.</p>
             </div>
-              <h2 class="Q" data-lang="q">
-            نقوم بتصنيع الصناديق الكرتونية والألواح المموجة بأي حجم ومواصفات وبجميع الألوان
-            </h2>
-         </section>
-
-
-         <!--==================== COMBO ====================-->
-        
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact" id="contact">
-            <div class="contact-container grid">
-              <div class="contact-data">
-                             <h2 class="q"data-lang="l" >Location</h2>
-                     <div class="gmap-canvas">
-                       <iframe 
-                         width="100%" 
-                         height="420" 
-                         id="gmap_canvas"
-                         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.1575513528496!2d31.485745584851383!3d31.43732928139714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzE0LjQiTiAzMcKwMjknMDAuOCJF!5e0!3m2!1sar!2seg!4v1761442612401!5m2!1sar!2seg" 
-                         style="border:0;" 
-                         allowfullscreen="" 
-                         loading="lazy" 
-                         referrerpolicy="no-referrer-when-downgrade">
-                       </iframe>
-                     </div>
-
-              <div class="contact-info grid">
-                  <div>
-                    <h3 class="contact-subtitle" data-lang="cont">تواصل معنا</h3>
-
-                    <div class="contact-social">
-                      <a href="" target="_blank" class="contact-social-link">
-                        <i class="ri-whatsapp-line"></i>
-                      </a>
-
-                      <a href="" target="_blank" class="contact-social-link">
-                        <i class="ri-messenger-fill"></i>
-                      </a>
-
-                      <a href="" target="_blank" class="contact-social-link">
-                        <i class="ri-telegram-2-fill"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-subtitle" data-lang="serv">خدمة العملاء</h3>
-
-                    <address class="contact-address">
-                        0 10 10368964
-                    </address>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-subtitle" data-lang="loc">العنوان</h3>
-
-                    <address class="contact-address" data-lang="loca">
-                      جمصة/المنطقة الصناعية الثالثة
-                    </address>
-                  </div>
-
-              
-              </div>
-
+          </article>
+          <article class="product product-wide">
+            <img src="img/head.jpg" alt="" loading="lazy" class="product-cover" width="1280" height="446">
+            <div>
+              <h3 data-i18n="p4_t">ألواح كرتون مموج</h3>
+              <p data-i18n="p4_d">ألواح بطبقات وسماكات مختلفة حسب الحمل المطلوب.</p>
             </div>
-         </section>
-     </main>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!--------- FOOTER -------->
-     <footer class="footer">
-       <div class="footer-container container grid">
-          <a href="" class="footer-logo">
-            <img src="img/nav.jpg" alt="image">
-           
-          </a>
+    <!-- ============ PROCESS ============ -->
+    <section class="process section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-i18n="proc_title">من الفكرة حتى باب مخزنك</h2>
+          <p class="section-lead" data-i18n="proc_lead">جي باك وجهتك الأولى لكل احتياجات التعبئة والتغليف.</p>
+        </header>
+        <ol class="steps">
+          <li><h3 data-i18n="s1_t">تصميم الطباعة</h3><p data-i18n="s1_d">نجهّز تصميم الكرتونة بالمقاس والشعار المطلوب.</p></li>
+          <li><h3 data-i18n="s2_t">إنتاج العينات</h3><p data-i18n="s2_d">عينة فعلية تراجعها قبل بدء الإنتاج.</p></li>
+          <li><h3 data-i18n="s3_t">التصنيع</h3><p data-i18n="s3_d">إنتاج على خطوط حديثة بخامات عالية الجودة.</p></li>
+          <li><h3 data-i18n="s4_t">الشحن والتوصيل</h3><p data-i18n="s4_d">خدمات لوجستية توصل طلبك إلى موقعك.</p></li>
+        </ol>
+      </div>
+    </section>
 
-          <div class="footer-content grid">
-             <div>
-              <h3 class="footer-title" data-lang="soci">social</h3>
-              <div class="footer-social">
-                 <a href="https://wa.me/201065767929" target="_blank" class="footer-social-link">
-                      <i class="ri-whatsapp-fill" style="font-size:40px;color:green;"></i>
-                 </a>
-                 
-                 <a href="https://www.facebook.com/share/14M82GtJGPj/" target="_blank">
-                      <i class="ri-facebook-circle-fill" style="font-size:40px;color:#1877f2;"></i>
-                    </a>
-                    
-                    <a href="gpack_carton@yahoo.com" target="_blank">
-                       <i class="ri-mail-send-line" style="font-size:40px;" ></i>
-                  </a>
+    <div class="flute flute-dark" aria-hidden="true"></div>
 
-             </div>
+    <!-- ============ FACTORY ============ -->
+    <section class="factory section" id="factory">
+      <div class="factory-grid container">
+        <div class="factory-text">
+          <h2 class="section-title" data-i18n="fac_title">داخل المصنع</h2>
+          <p data-i18n="fac_p">خطوط إنتاج حديثة للكرتون المضلع في جمصة. شاهد مرحلة التجميع والتغذية على الماكينة.</p>
+          <a href="#contact" class="btn btn-red" data-i18n="fac_cta">زيارة المصنع</a>
+        </div>
+        <div class="video-frame">
+          <video controls preload="none" poster="img/video-poster.jpg" playsinline>
+            <source src="img/v.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
 
-             <div>
-           
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="contact-grid container">
+        <div class="contact-info">
+          <h2 class="section-title" data-i18n="con_title">تواصل معنا</h2>
+          <p class="section-lead" data-i18n="con_lead">أرسل المقاس والكمية ونوع الطباعة، ونرد عليك بعرض سعر.</p>
 
-          </div>
-       </div>
+          <ul class="contact-list">
+            <li>
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <div><span data-i18n="con_wa">واتساب</span><a href="https://wa.me/201065767929" target="_blank" rel="noopener" dir="ltr">0106 576 7929</a></div>
+            </li>
+            <li>
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <div><span data-i18n="con_phone">خدمة العملاء</span><a href="tel:+201010368964" dir="ltr">0101 036 8964</a></div>
+            </li>
+            <li>
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <div><span data-i18n="con_mail">البريد الإلكتروني</span><a href="mailto:gpack_carton@yahoo.com">gpack_carton@yahoo.com</a></div>
+            </li>
+            <li>
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <div><span data-i18n="con_addr">العنوان</span><strong data-i18n="con_addr_v">جمصة – المنطقة الصناعية الثالثة</strong></div>
+            </li>
+          </ul>
+        </div>
 
-       <span class="footer-copy" data-lang="f">
-         &#169; شركة جي باك  للكرتون
-       </span>
-     </footer>
+        <div class="map">
+          <iframe title="G-PACK location"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.1575513528496!2d31.485745584851383!3d31.43732928139714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzE0LjQiTiAzMcKwMjknMDAuOCJF!5e0!3m2!1sar!2seg!4v1761442612401!5m2!1sar!2seg"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-------- SCROLL UP ------->
-     <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-     </a>
-    <!------ SCROLLREVEAL ------->
-    <script src=""></script>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <img src="img/nav.jpg" alt="G PACK" class="footer-logo" width="140" height="50" loading="lazy">
+      <div class="footer-social">
+        <a href="https://wa.me/201065767929" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+        <a href="https://www.facebook.com/share/14M82GtJGPj/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+        <a href="mailto:gpack_carton@yahoo.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> <span data-i18n="footer">جي باك للكرتون</span></p>
+    </div>
+  </footer>
 
-    <!-------- MAIN JS -------->
-    <script src="main.js"></script>
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
+
+  <script src="main.js"></script>
 </body>
-
 </html>
