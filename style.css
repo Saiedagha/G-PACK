@@ -323,3 +323,5 @@ html[lang="en"] .hero-title { letter-spacing: -.025em; max-width: 14ch; }
 .contact-list .ri-whatsapp-line { background: var(--whatsapp); color: #fff; }
 .footer-social a[aria-label="WhatsApp"] { background: var(--whatsapp); }
 .footer-social a[aria-label="WhatsApp"]:hover { background: var(--whatsapp-deep); }
+.btn-wa { background: var(--whatsapp); color: #fff; }
+.btn-wa:hover { background: var(--whatsapp-deep); }
