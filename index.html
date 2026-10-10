@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>جي باك للكرتون | G-PACK Carton</title>
   <meta name="description" content="جي باك للكرتون – مصنع كرتون مضلع في جمصة، مصر. صناديق وألواح كرتون مطبوعة وغير مطبوعة بأي مقاس ولون.">
-  <meta name="theme-color" content="#2B2785">
+  <meta name="theme-color" content="#1E1B5E">
+  <meta property="og:title" content="جي باك للكرتون | G-PACK Carton">
+  <meta property="og:description" content="مصنع كرتون مضلع في جمصة – كراتين مطبوعة وسادة وألواح مموجة بأي مقاس.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?w=1200&q=75&auto=format&fit=crop">
   <link rel="icon" type="image/jpeg" href="img/logo.jpg">
 
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
@@ -16,6 +20,15 @@
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">تخطي إلى المحتوى</a>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a href="tel:+201010368964" dir="ltr"><i class="ri-phone-fill" aria-hidden="true"></i> 0101 036 8964</a>
+      <a href="mailto:gpack_carton@yahoo.com"><i class="ri-mail-fill" aria-hidden="true"></i> gpack_carton@yahoo.com</a>
+      <span class="topbar-addr"><i class="ri-map-pin-2-fill" aria-hidden="true"></i> <span data-i18n="addr_short">جمصة – المنطقة الصناعية الثالثة</span></span>
+    </div>
+  </div>
 
   <!-- ============ HEADER ============ -->
   <header class="header" id="header">
@@ -39,59 +52,109 @@
         <button id="lang-btn" class="lang-btn" type="button">
           <i class="ri-global-line" aria-hidden="true"></i><span id="lang-label">English</span>
         </button>
-        <a href="https://wa.me/201065767929" target="_blank" rel="noopener" class="btn btn-wa btn-sm nav-cta">
+        <a href="#quote" class="btn btn-wa btn-sm nav-cta">
           <i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="nav_quote">اطلب عرض سعر</span>
         </a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-menu"><i class="ri-menu-3-line"></i></button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false"><i class="ri-menu-3-line"></i></button>
       </div>
     </nav>
   </header>
 
-  <main class="main" id="main">
+  <main id="main">
     <!-- ============ HERO ============ -->
     <section class="hero" id="home">
-      <div class="hero-grid container">
-        <div class="hero-text">
-          <p class="hero-place"><i class="ri-map-pin-2-fill" aria-hidden="true"></i><span data-i18n="hero_place">مصنع كرتون مضلع — جمصة، مصر</span></p>
-          <h1 class="hero-title" data-i18n="hero_title">كرتون يتحمّل الحِمل والرطوبة</h1>
-          <p class="hero-lead" data-i18n="hero_lead">تحرص جي باك على تزويد العملاء بأفضل المنتجات بأعلى جودة، من خلال شراء أفضل المواد الخام لإنتاج كراتين مقاومة لضغط الأحمال والرطوبة.</p>
-          <div class="hero-actions">
-            <a href="https://wa.me/201065767929" target="_blank" rel="noopener" class="btn btn-wa">
-              <i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="hero_cta1">اطلب عرض سعر</span>
-            </a>
-            <a href="#products" class="btn btn-ghost" data-i18n="hero_cta2">تصفّح المنتجات</a>
-          </div>
-        </div>
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?w=1920&q=75&auto=format&fit=crop"
+             srcset="https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?w=900&q=70&auto=format&fit=crop 900w,
+                     https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?w=1400&q=72&auto=format&fit=crop 1400w,
+                     https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?w=1920&q=75&auto=format&fit=crop 1920w"
+             sizes="100vw" alt="" fetchpriority="high">
+      </div>
 
-        <div class="hero-media">
-          <img src="img/2.png" alt="" class="hero-img" width="500" height="500">
+      <div class="hero-content container">
+        <p class="hero-place"><i class="ri-building-2-fill" aria-hidden="true"></i><span data-i18n="hero_place">مصنع كرتون مضلع في جمصة، مصر</span></p>
+        <h1 class="hero-title" data-i18n="hero_title">كرتون يتحمّل الحِمل والرطوبة</h1>
+        <p class="hero-lead" data-i18n="hero_lead">نصنع صناديق وألواح الكرتون المضلع المطبوعة وغير المطبوعة بأي مقاس ولون، من أجود الخامات، عشان منتجك يوصل زي ما خرج.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-wa">
+            <i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="hero_cta1">اطلب عرض سعر</span>
+          </a>
+          <a href="#products" class="btn btn-light" data-i18n="hero_cta2">تصفّح المنتجات</a>
         </div>
       </div>
 
-      <dl class="facts container">
-        <div class="fact"><dt data-i18n="fact1_k">تأسس</dt><dd>2017</dd></div>
-        <div class="fact"><dt data-i18n="fact2_k">سنوات خبرة</dt><dd data-i18n="fact2_v">قرابة 20</dd></div>
-        <div class="fact"><dt data-i18n="fact3_k">المقاسات والألوان</dt><dd data-i18n="fact3_v">حسب الطلب</dd></div>
+      <div class="flute flute-bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-wrap" aria-label="G-PACK in numbers">
+      <dl class="stats container">
+        <div class="stat reveal"><dt data-i18n="st1">سنة التأسيس</dt><dd><span class="count" data-to="2017" data-from="1990">2017</span></dd></div>
+        <div class="stat reveal"><dt data-i18n="st2">سنة خبرة في الصناعة</dt><dd><span class="count" data-to="20">20</span>+</dd></div>
+        <div class="stat reveal"><dt data-i18n="st3">قطاعات: زراعي، غذائي، ملابس</dt><dd><span class="count" data-to="3">3</span></dd></div>
+        <div class="stat reveal"><dt data-i18n="st4">وبجميع الألوان</dt><dd data-i18n="st4_v">أي مقاس</dd></div>
       </dl>
     </section>
 
-    <div class="flute" aria-hidden="true"></div>
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span data-i18n="mq">كراتين مطبوعة ✦ صناديق سادة ✦ ألواح مموجة ✦ كراتين فاكهة وخضار ✦ علب ملابس ✦ تعبئة غذائية ✦</span>
+        <span data-i18n="mq">كراتين مطبوعة ✦ صناديق سادة ✦ ألواح مموجة ✦ كراتين فاكهة وخضار ✦ علب ملابس ✦ تعبئة غذائية ✦</span>
+      </div>
+    </div>
 
     <!-- ============ ABOUT ============ -->
     <section class="about section" id="about">
       <div class="about-grid container">
-        <div class="about-media">
-          <img src="img/9.jpg" alt="" class="about-img" loading="lazy" width="800" height="565">
+        <div class="about-media reveal">
+          <img src="https://images.unsplash.com/photo-1589792923962-537704632910?w=1100&q=72&auto=format&fit=crop" alt="" class="about-img" loading="lazy" width="1100" height="733">
+          <img src="img/9.jpg" alt="" class="about-inset" loading="lazy" width="800" height="565">
+          <div class="about-badge"><span data-i18n="badge">منذ</span><strong>2017</strong></div>
         </div>
-        <div class="about-text">
-          <h2 class="section-title" data-i18n="about_title">مصنع كرتون منذ 2017</h2>
+        <div class="about-text reveal">
+          <p class="kicker" data-i18n="about_kicker">من نحن</p>
+          <h2 class="section-title" data-i18n="about_title">شريكك في التعبئة والتغليف</h2>
           <p data-i18n="about_p1">جي باك للكرتون مصنع تأسس عام 2017 بخبرة تقارب العشرين عاماً. ننتج كافة أنواع الكرتون المضلع المستخدم في تعبئة الإنتاج الزراعي والغذائي والملابس.</p>
           <p data-i18n="about_p2">مصنعنا في المنطقة الصناعية الثالثة بجمصة، ومجهّز بأحدث الآلات لإنتاج صناديق وألواح الكرتون المطبوعة وغير المطبوعة.</p>
-          <ul class="sectors" aria-label="Sectors">
-            <li><i class="ri-plant-line" aria-hidden="true"></i><span data-i18n="sector1">الإنتاج الزراعي</span></li>
-            <li><i class="ri-restaurant-line" aria-hidden="true"></i><span data-i18n="sector2">المواد الغذائية</span></li>
-            <li><i class="ri-shirt-line" aria-hidden="true"></i><span data-i18n="sector3">الملابس</span></li>
+          <ul class="checks">
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i><span data-i18n="ck1">مقاومة لضغط الأحمال والرطوبة</span></li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i><span data-i18n="ck2">أجود أنواع الخامات</span></li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i><span data-i18n="ck3">طباعة بتصميمك وشعارك</span></li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i><span data-i18n="ck4">عينات قبل الإنتاج</span></li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="why section">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="kicker" data-i18n="why_kicker">ليه جي باك؟</p>
+          <h2 class="section-title" data-i18n="why_title">كرتون معمول عشان يشيل</h2>
+        </header>
+        <div class="why-grid">
+          <article class="why-item reveal">
+            <i class="ri-weight-line" aria-hidden="true"></i>
+            <h3 data-i18n="w1_t">يتحمّل الأحمال</h3>
+            <p data-i18n="w1_d">طبقات مضلعة قوية تحمي المنتج أثناء الرصّ والنقل.</p>
+          </article>
+          <article class="why-item reveal">
+            <i class="ri-drop-line" aria-hidden="true"></i>
+            <h3 data-i18n="w2_t">مقاوم للرطوبة</h3>
+            <p data-i18n="w2_d">مناسب لتعبئة الفاكهة والخضروات والتخزين.</p>
+          </article>
+          <article class="why-item reveal">
+            <i class="ri-palette-line" aria-hidden="true"></i>
+            <h3 data-i18n="w3_t">طباعة بألوانك</h3>
+            <p data-i18n="w3_d">نصمّم ونطبع شعارك وبيانات منتجك على الكرتونة.</p>
+          </article>
+          <article class="why-item reveal">
+            <i class="ri-truck-line" aria-hidden="true"></i>
+            <h3 data-i18n="w4_t">توصيل لموقعك</h3>
+            <p data-i18n="w4_d">خدمات لوجستية توصل طلبك لحد مخزنك.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -99,38 +162,43 @@
     <!-- ============ PRODUCTS ============ -->
     <section class="products section" id="products">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head reveal">
+          <p class="kicker" data-i18n="prod_kicker">منتجاتنا</p>
           <h2 class="section-title" data-i18n="prod_title">ما ننتجه</h2>
           <p class="section-lead" data-i18n="prod_lead">نصنع الصناديق الكرتونية والألواح المموجة بأي حجم ومواصفات وبجميع الألوان.</p>
         </header>
 
         <div class="product-grid">
-          <article class="product product-wide">
-            <img src="img/4.png" alt="" loading="lazy" width="204" height="206">
-            <div>
+          <article class="product reveal">
+            <div class="product-img"><img src="img/4.png" alt="" loading="lazy" width="204" height="206"></div>
+            <div class="product-body">
               <h3 data-i18n="p1_t">كراتين مطبوعة</h3>
-              <p data-i18n="p1_d">طباعة بألوان متعددة بتصميمك وشعارك — مثالية لتعبئة الفاكهة والخضروات والتصدير.</p>
+              <p data-i18n="p1_d">طباعة بألوان متعددة بتصميمك وشعارك — مثالية للفاكهة والخضروات والتصدير.</p>
+              <a href="#quote" class="product-link" data-product="p1_t"><span data-i18n="ask">اطلب السعر</span><i class="ri-arrow-left-up-line" aria-hidden="true"></i></a>
             </div>
           </article>
-          <article class="product">
-            <img src="img/home.png" alt="" loading="lazy" width="206" height="206">
-            <div>
+          <article class="product reveal">
+            <div class="product-img"><img src="img/home.png" alt="" loading="lazy" width="206" height="206"></div>
+            <div class="product-body">
               <h3 data-i18n="p2_t">صناديق سادة</h3>
               <p data-i18n="p2_d">صناديق كرتون مضلع بدون طباعة للشحن والتخزين.</p>
+              <a href="#quote" class="product-link" data-product="p2_t"><span data-i18n="ask">اطلب السعر</span><i class="ri-arrow-left-up-line" aria-hidden="true"></i></a>
             </div>
           </article>
-          <article class="product">
-            <img src="img/3.png" alt="" loading="lazy" width="310" height="310">
-            <div>
+          <article class="product reveal">
+            <div class="product-img"><img src="img/3.png" alt="" loading="lazy" width="310" height="310"></div>
+            <div class="product-body">
               <h3 data-i18n="p3_t">علب بغطاء</h3>
               <p data-i18n="p3_d">علب بيضاء أو كرافت بغطاء منفصل للملابس والهدايا.</p>
+              <a href="#quote" class="product-link" data-product="p3_t"><span data-i18n="ask">اطلب السعر</span><i class="ri-arrow-left-up-line" aria-hidden="true"></i></a>
             </div>
           </article>
-          <article class="product product-wide">
-            <img src="img/head.jpg" alt="" loading="lazy" class="product-cover" width="1280" height="446">
-            <div>
+          <article class="product reveal">
+            <div class="product-img product-img-cover"><img src="https://images.unsplash.com/photo-1786540479491-c5c210e57945?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy" width="700" height="467"></div>
+            <div class="product-body">
               <h3 data-i18n="p4_t">ألواح كرتون مموج</h3>
               <p data-i18n="p4_d">ألواح بطبقات وسماكات مختلفة حسب الحمل المطلوب.</p>
+              <a href="#quote" class="product-link" data-product="p4_t"><span data-i18n="ask">اطلب السعر</span><i class="ri-arrow-left-up-line" aria-hidden="true"></i></a>
             </div>
           </article>
         </div>
@@ -140,47 +208,60 @@
     <!-- ============ PROCESS ============ -->
     <section class="process section">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head center reveal">
+          <p class="kicker" data-i18n="proc_kicker">طريقة الشغل</p>
           <h2 class="section-title" data-i18n="proc_title">من الفكرة حتى باب مخزنك</h2>
-          <p class="section-lead" data-i18n="proc_lead">جي باك وجهتك الأولى لكل احتياجات التعبئة والتغليف.</p>
         </header>
         <ol class="steps">
-          <li><h3 data-i18n="s1_t">تصميم الطباعة</h3><p data-i18n="s1_d">نجهّز تصميم الكرتونة بالمقاس والشعار المطلوب.</p></li>
-          <li><h3 data-i18n="s2_t">إنتاج العينات</h3><p data-i18n="s2_d">عينة فعلية تراجعها قبل بدء الإنتاج.</p></li>
-          <li><h3 data-i18n="s3_t">التصنيع</h3><p data-i18n="s3_d">إنتاج على خطوط حديثة بخامات عالية الجودة.</p></li>
-          <li><h3 data-i18n="s4_t">الشحن والتوصيل</h3><p data-i18n="s4_d">خدمات لوجستية توصل طلبك إلى موقعك.</p></li>
+          <li class="reveal"><span class="step-icon"><i class="ri-pencil-ruler-2-line" aria-hidden="true"></i></span><h3 data-i18n="s1_t">تصميم الطباعة</h3><p data-i18n="s1_d">نجهّز تصميم الكرتونة بالمقاس والشعار المطلوب.</p></li>
+          <li class="reveal"><span class="step-icon"><i class="ri-box-3-line" aria-hidden="true"></i></span><h3 data-i18n="s2_t">إنتاج العينات</h3><p data-i18n="s2_d">عينة فعلية تراجعها قبل بدء الإنتاج.</p></li>
+          <li class="reveal"><span class="step-icon"><i class="ri-settings-5-line" aria-hidden="true"></i></span><h3 data-i18n="s3_t">التصنيع</h3><p data-i18n="s3_d">إنتاج على خطوط حديثة بخامات عالية الجودة.</p></li>
+          <li class="reveal"><span class="step-icon"><i class="ri-truck-line" aria-hidden="true"></i></span><h3 data-i18n="s4_t">الشحن والتوصيل</h3><p data-i18n="s4_d">خدمات لوجستية توصل طلبك إلى موقعك.</p></li>
         </ol>
       </div>
     </section>
 
-    <div class="flute flute-dark" aria-hidden="true"></div>
-
     <!-- ============ FACTORY ============ -->
     <section class="factory section" id="factory">
       <div class="factory-grid container">
-        <div class="factory-text">
+        <div class="factory-text reveal">
+          <p class="kicker kicker-light" data-i18n="fac_kicker">المصنع</p>
           <h2 class="section-title" data-i18n="fac_title">داخل المصنع</h2>
           <p data-i18n="fac_p">خطوط إنتاج حديثة للكرتون المضلع في جمصة. شاهد مرحلة التجميع والتغذية على الماكينة.</p>
           <a href="#contact" class="btn btn-red" data-i18n="fac_cta">زيارة المصنع</a>
         </div>
-        <div class="video-frame">
+        <div class="video-frame reveal">
           <video controls preload="none" poster="img/video-poster.jpg" playsinline>
             <source src="img/v.mp4" type="video/mp4">
           </video>
         </div>
       </div>
+      <div class="gallery container">
+        <img src="img/9.jpg" alt="" loading="lazy" class="reveal">
+        <img src="https://images.unsplash.com/photo-1700165644892-3dd6b67b25bc?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy" class="reveal">
+        <img src="https://images.unsplash.com/photo-1624137527136-66e631bdaa0e?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy" class="reveal">
+      </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=70&auto=format&fit=crop" alt="" class="cta-bg" loading="lazy">
+      <div class="container cta-inner reveal">
+        <h2 data-i18n="cta_title">محتاج كراتين بمقاس خاص؟</h2>
+        <p data-i18n="cta_p">ابعتلنا المقاس والكمية، ونرد عليك بعرض سعر في أسرع وقت.</p>
+        <a href="#quote" class="btn btn-wa"><i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="cta_btn">ابدأ طلبك الآن</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / QUOTE ============ -->
     <section class="contact section" id="contact">
       <div class="contact-grid container">
-        <div class="contact-info">
-          <h2 class="section-title" data-i18n="con_title">تواصل معنا</h2>
-          <p class="section-lead" data-i18n="con_lead">أرسل المقاس والكمية ونوع الطباعة، ونرد عليك بعرض سعر.</p>
-
+        <div class="contact-info reveal">
+          <p class="kicker" data-i18n="con_kicker">تواصل معنا</p>
+          <h2 class="section-title" data-i18n="con_title">كلّمنا مباشرة</h2>
           <ul class="contact-list">
             <li>
-              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <i class="ri-whatsapp-line wa-icon" aria-hidden="true"></i>
               <div><span data-i18n="con_wa">واتساب</span><a href="https://wa.me/201065767929" target="_blank" rel="noopener" dir="ltr">0106 576 7929</a></div>
             </li>
             <li>
@@ -193,33 +274,84 @@
             </li>
             <li>
               <i class="ri-map-pin-line" aria-hidden="true"></i>
-              <div><span data-i18n="con_addr">العنوان</span><strong data-i18n="con_addr_v">جمصة – المنطقة الصناعية الثالثة</strong></div>
+              <div><span data-i18n="con_addr">العنوان</span><strong data-i18n="addr_short">جمصة – المنطقة الصناعية الثالثة</strong></div>
             </li>
           </ul>
+          <div class="map">
+            <iframe title="G-PACK location"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.1575513528496!2d31.485745584851383!3d31.43732928139714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzE0LjQiTiAzMcKwMjknMDAuOCJF!5e0!3m2!1sar!2seg!4v1761442612401!5m2!1sar!2seg"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
         </div>
 
-        <div class="map">
-          <iframe title="G-PACK location"
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.1575513528496!2d31.485745584851383!3d31.43732928139714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzE0LjQiTiAzMcKwMjknMDAuOCJF!5e0!3m2!1sar!2seg!4v1761442612401!5m2!1sar!2seg"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
+        <form class="quote reveal" id="quote" novalidate>
+          <h3 data-i18n="q_title">اطلب عرض سعر</h3>
+          <p class="quote-note" data-i18n="q_note">املأ البيانات وهيتفتح واتساب برسالة جاهزة.</p>
+
+          <label><span data-i18n="q_name">الاسم / الشركة</span>
+            <input type="text" name="name" id="q-name" autocomplete="organization" data-i18n-ph="q_name_ph" placeholder="مثال: مزارع النيل">
+          </label>
+          <label><span data-i18n="q_type">نوع الكرتون</span>
+            <select name="type" id="q-type">
+              <option value="p1_t" data-i18n="p1_t">كراتين مطبوعة</option>
+              <option value="p2_t" data-i18n="p2_t">صناديق سادة</option>
+              <option value="p3_t" data-i18n="p3_t">علب بغطاء</option>
+              <option value="p4_t" data-i18n="p4_t">ألواح كرتون مموج</option>
+            </select>
+          </label>
+          <div class="quote-row">
+            <label><span data-i18n="q_size">المقاس (سم)</span>
+              <input type="text" name="size" data-i18n-ph="q_size_ph" placeholder="40 × 30 × 25">
+            </label>
+            <label><span data-i18n="q_qty">الكمية</span>
+              <input type="text" inputmode="numeric" name="qty" data-i18n-ph="q_qty_ph" placeholder="1000">
+            </label>
+          </div>
+          <label><span data-i18n="q_msg">تفاصيل إضافية</span>
+            <textarea name="msg" rows="3" data-i18n-ph="q_msg_ph" placeholder="نوع الطباعة، عدد الألوان، موعد التسليم…"></textarea>
+          </label>
+          <p class="quote-error" id="quote-error" role="alert" hidden data-i18n="q_err">اكتب الاسم عشان نعرف نرد عليك.</p>
+          <button type="submit" class="btn btn-wa btn-block"><i class="ri-whatsapp-line" aria-hidden="true"></i><span data-i18n="q_send">إرسال على واتساب</span></button>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="footer-inner container">
-      <img src="img/nav.jpg" alt="G PACK" class="footer-logo" width="140" height="50" loading="lazy">
-      <div class="footer-social">
-        <a href="https://wa.me/201065767929" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
-        <a href="https://www.facebook.com/share/14M82GtJGPj/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-        <a href="mailto:gpack_carton@yahoo.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+    <div class="flute flute-footer" aria-hidden="true"></div>
+    <div class="footer-grid container">
+      <div class="footer-brand">
+        <img src="img/nav.jpg" alt="G PACK" class="footer-logo" width="140" height="50" loading="lazy">
+        <p data-i18n="f_about">مصنع كرتون مضلع في جمصة منذ 2017. صناديق وألواح مطبوعة وغير مطبوعة بأي مقاس ولون.</p>
       </div>
-      <p class="footer-copy">© <span id="year">2026</span> <span data-i18n="footer">جي باك للكرتون</span></p>
+      <div>
+        <h3 data-i18n="f_links">روابط</h3>
+        <ul>
+          <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#products" data-i18n="nav_products">منتجاتنا</a></li>
+          <li><a href="#factory" data-i18n="nav_factory">المصنع</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="f_contact">تواصل</h3>
+        <ul>
+          <li><a href="tel:+201010368964" dir="ltr">0101 036 8964</a></li>
+          <li><a href="mailto:gpack_carton@yahoo.com">gpack_carton@yahoo.com</a></li>
+          <li data-i18n="addr_short">جمصة – المنطقة الصناعية الثالثة</li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://wa.me/201065767929" target="_blank" rel="noopener" aria-label="WhatsApp" class="s-wa"><i class="ri-whatsapp-fill"></i></a>
+          <a href="https://www.facebook.com/share/14M82GtJGPj/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="mailto:gpack_carton@yahoo.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+        </div>
+      </div>
     </div>
+    <p class="footer-copy container">© <span id="year">2026</span> <span data-i18n="footer">جي باك للكرتون. جميع الحقوق محفوظة.</span></p>
   </footer>
 
+  <a href="https://wa.me/201065767929" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
   <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
 
   <script src="main.js"></script>
