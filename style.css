@@ -445,3 +445,12 @@ main { overflow-x: clip; }
   }
   .carousel-dots button.active { width: 1.8rem; background: var(--indigo); }
 }
+
+/* ---------- process: 2 × 2 on mobile ---------- */
+@media (max-width: 560px) {
+  .steps { grid-template-columns: 1fr 1fr; gap: 2rem .75rem; }
+  .step-icon { width: 3.6rem; height: 3.6rem; font-size: 1.5rem; margin-bottom: .9rem; }
+  .steps li::after { width: 1.45rem; height: 1.45rem; font-size: .72rem; inset-inline-start: calc(50% + 1.05rem); }
+  .steps h3 { font-size: 1rem; }
+  .steps p { font-size: .85rem; line-height: 1.6; }
+}
