@@ -111,7 +111,9 @@ button { background: none; border: 0; cursor: pointer; }
 .header.scrolled { box-shadow: 0 8px 30px -12px rgba(30, 27, 94, .25); background: rgba(251, 250, 247, .97); }
 .nav { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: height .3s; }
 .header.scrolled .nav { height: 4rem; }
-.nav-logo img { width: 132px; border-radius: 4px; }
+.nav-logo img { height: 52px; width: auto; }
+.header.scrolled .nav-logo img { height: 46px; }
+.nav-logo img { transition: height .3s; }
 .nav-list { display: flex; gap: 2.1rem; }
 .nav-link { font-family: var(--font-display); font-weight: 500; font-size: .95rem; color: var(--muted); padding-block: .4rem; position: relative; transition: color .2s; }
 .nav-link::after { content: ""; position: absolute; inset-inline: 0; bottom: -2px; height: 3px; background: var(--red); border-radius: 2px; transform: scaleX(0); transition: transform .3s var(--ease); }
@@ -338,7 +340,7 @@ html[lang="en"] .hero-title { letter-spacing: -.025em; max-width: 13ch; }
 /* ---------- footer ---------- */
 .footer { background: var(--ink); color: #B8B5CF; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; padding-block: 3.5rem 2.5rem; }
-.footer-logo { width: 130px; border-radius: 4px; margin-bottom: 1rem; }
+.footer-logo { height: 64px; width: auto; margin-bottom: 1rem; }
 .footer-brand p { max-width: 24rem; font-size: .95rem; }
 .footer h3 { color: #fff; font-size: 1.05rem; margin-bottom: 1rem; }
 .footer ul { display: grid; gap: .55rem; font-size: .95rem; }
@@ -454,3 +456,5 @@ main { overflow-x: clip; }
   .steps h3 { font-size: 1rem; }
   .steps p { font-size: .85rem; line-height: 1.6; }
 }
+
+@media (max-width: 560px) { .nav-logo img { height: 44px; } .header.scrolled .nav-logo img { height: 40px; } }
